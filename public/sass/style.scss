@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: black;
+  header {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    h1 {
+      color: white;
+      font-size: 2.5vw;
+    }
+    #controlDiv {
+      button {
+        padding: 0.5vw 1vw;
+        width: 8vw;
+        font-size: 1.5vw;
+      }
+    }
+    #instructionDiv {
+      button {
+        padding: 0.5vw 1vw;
+        font-size: 1.5vw;
+      }
+    }
+  }
+  main {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    #mainDiv {
+      width: 70%;
+      height: 80%;
+      box-shadow: -4px 5px 10px 10px rgb(97, 94, 94);
+      position: relative;
+      overflow: hidden;
+      img#theImg {
+        width: 3vw;
+        height: 6vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .theDote {
+        position: absolute;
+        width: 1vw;
+        height: 1vw;
+        background-color: #fff;
+        border-radius: 25px;
+      }
+    }
+  }
+  section#instructions {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(221, 206, 206);
+    opacity: 0.8;
+    display: none;
+    div {
+      width: 40%;
+      height: 60%;
+      background-color: rgb(184, 166, 166);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      span {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      img {
+        width: 50%;
+      }
+    }
+  }
+}
